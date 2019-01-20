@@ -32,9 +32,9 @@ And replace it with the following:
 ```lua
 if NetworkIsPlayerTalking(PlayerId()) and not inCinema then
 	drawLevel(41, 128, 185, 255)
-elseif not NetworkIsPlayerTalking(PlayerId()) not inCinema then
+elseif not NetworkIsPlayerTalking(PlayerId()) and not inCinema then
 	drawLevel(185, 185, 185, 255)
-end
+end	
 ```
 
 Then somewhere within the same file, add the following:
